@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Whop Video Saver</title>
+<style>
+  body { width: 310px; margin: 16px; font: 14px system-ui; background: #171923; color: #f2f4fa; }
+  h1 { font-size: 18px; margin: 0 0 12px; }
+  p { color: #c0c7d6; }
+  ul { padding: 0; list-style: none; }
+  li { margin: 10px 0; overflow-wrap: anywhere; }
+  button { border: 0; border-radius: 6px; padding: 8px 12px; cursor: pointer; }
+  li button { display: block; margin-top: 5px; }
+</style>
+<h1>Whop Video Saver</h1>
+<button id="scan" type="button">Scan tab</button>
+<p id="status" role="status"></p>
+<ul id="videos"></ul>
+<script src="detect.js"></script>
+<script src="popup.js"></script>
+</html>

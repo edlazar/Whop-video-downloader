@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Whop Video Saver",
+  "version": "1.2.0",
+  "description": "Save direct videos and compatible HLS streams from Whop.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "https://*.mux.com/*",
+    "https://*.whop.com/*"
+  ],
+  "background": {
+    "service_worker": "download.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.whop.com/*"
+      ],
+      "js": [
+        "detect.js",
+        "inline.js"
+      ],
+      "css": [
+        "inline.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

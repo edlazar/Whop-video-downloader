@@ -1,0 +1,17 @@
+.whop-video-saver-controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-block: 0.65rem;
+  font: 14px system-ui, sans-serif;
+}
+.whop-video-saver-controls > button {
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #4c75ef;
+  border-radius: 0.5rem;
+  background: #2454df;
+  color: white;
+  cursor: pointer;
+}
+.whop-video-saver-controls > button:disabled { opacity: 0.6; cursor: wait; }
